@@ -13,9 +13,11 @@ services:
       - SUDO_PASSWORD=root #optional
 #       - SUDO_PASSWORD_HASH= #optional
 #       - PROXY_DOMAIN=code-server.my.domain #optional
-      - DEFAULT_WORKSPACE=/ #optional
+      - DEFAULT_WORKSPACE=/home #optional
     volumes:
       - /Ex/appdata/config:/config
     ports:
       - 80:8443
     restart: unless-stopped
+    security_opt:
+      - no-new-privileges:false
