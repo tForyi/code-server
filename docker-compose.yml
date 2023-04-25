@@ -17,5 +17,5 @@ services:
     volumes:
       - /Ex/appdata/config:/config
     ports:
-      - 8080:8443
+      - 80:8443
     restart: unless-stopped
