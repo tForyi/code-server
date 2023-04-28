@@ -7,7 +7,7 @@ services:
     privileged: true
     tty: true
     stdin_open: true
-    user: "0"
+    user: root
     environment:
       - PUID=1000
       - PGID=1000
