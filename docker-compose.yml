@@ -14,10 +14,10 @@ services:
       - PGID=1000
       - TZ=Asia/Shanghai
       - PASSWORD=Ww12345 #optional
-#       - HASHED_PASSWORD= #optional
-        - SUDO_PASSWORD=Ww12345 #optional
-#       - SUDO_PASSWORD_HASH= #optional
-#       - PROXY_DOMAIN=code-server.my.domain #optional
+#     - HASHED_PASSWORD= #optional
+      - SUDO_PASSWORD=Ww12345 #optional
+#     - SUDO_PASSWORD_HASH= #optional
+#     - PROXY_DOMAIN=code-server.my.domain #optional
       - DEFAULT_WORKSPACE=~ #optional
     volumes:
       - ./coder:/usr/coder/config
