@@ -2,7 +2,8 @@
 version: "3.8"
 services:
   code-server:
-    image: linuxserver/code-server
+    build: .
+    # image: linuxserver/code-server
     # container_name: code-server
     privileged: true
     tty: true
